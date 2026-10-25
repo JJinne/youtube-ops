@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Noto Sans KR", system-ui, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --color-ground: #f5f6f8;
+  --color-surface: #ffffff;
+  --color-ink: #14171f;
+  --color-sub: #3a404c;
+  --color-muted: #5b6270;
+  --color-line: #e3e6eb;
+  --color-line-soft: #eef0f3;
+  --color-field: #d3d8e0;
+  --color-track: #e9ecf1;
+
+  --color-navy: #1f2f57;
+  --color-navy-deep: #14203d;
+  --color-navy-tint: #e8ecf5;
+  --color-navy-mid: #5c7cc2;
+  --color-navy-pale: #c9d3e8;
+
+  --color-sample-bg: #fff4db;
+  --color-sample-fg: #7a4b00;
+  --color-ai-bg: #f0ecfa;
+  --color-ai-fg: #4b2f96;
+  --color-good: #1f7a4d;
+  --color-good-bg: #e3f2ea;
+  --color-good-fg: #1f5e3e;
+  --color-bad: #8a2e1f;
+  --color-bad-bg: #fbeae7;
+  --color-warn: #9a5b00;
+}
+
+html,
+body {
+  background: var(--color-ground);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--color-navy);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-navy);
+  outline-offset: 2px;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
